@@ -1,41 +1,25 @@
 # customer-churn-analysis-sql-python
 End-to-end Customer Churn Analysis project using SQL, Python, Pandas, SQLite, Matplotlib and Seaborn. Performed data cleaning, feature engineering, KPI analysis, customer retention insights, revenue impact analysis and business recommendations through an executive-ready analytics workflow.
-1. Project Title
-📊 Customer Churn Analysis & Customer Intelligence
-2. Project Objective (Excellent)
 
-Objective
+📊 Churn Analysis & Customer Intelligence
 
-The objective of this project is to analyze customer behavior and identify the main reasons why customers cancel their subscriptions. Using SQL, Python, Pandas, and Data Visualization, the project helps businesses reduce customer churn, improve customer retention, and make better business decisions through data-driven insights. The project focuses on finding high-risk customers, measuring important KPIs, and providing actionable recommendations.
+📌 Project Overview
 
-3. GitHub README
-📌 Customer Churn Analysis
-📖 Project Overview
+Customer churn is one of the biggest challenges for subscription-based businesses. In this project, I analyzed customer behavior, subscription data, and support interactions to identify why customers leave and how businesses can improve customer retention.
 
-Customer churn is one of the biggest challenges for subscription-based businesses like Netflix, Amazon Prime, Hotstar, SaaS companies, Telecom, and Banking.
+This project demonstrates my end-to-end Data Analytics workflow using SQL, Python, Pandas, NumPy, Matplotlib, and Seaborn. It includes data cleaning, feature engineering, exploratory data analysis (EDA), KPI creation, visualization, and business recommendations.
 
-In this project, I analyzed customer subscription, support, and demographic data to identify:
+🎯 Project Objective
+Analyze customer churn behavior.
+Identify customers with high churn risk.
+Calculate important business KPIs.
+Find factors affecting customer retention.
+Measure revenue loss due to churn.
+Build meaningful visualizations.
+Provide data-driven business recommendations.
+Help management improve customer retention and profitability.
 
-Why customers leave
-Which customers are most likely to churn
-Which plans have the highest churn
-Revenue loss due to churn
-Business recommendations to improve customer retention
-
-This project demonstrates my end-to-end Data Analytics workflow using SQL and Python.
-
-🎯 Business Problem
-
-Companies lose revenue when customers cancel their subscriptions.
-
-This project answers important business questions:
-
-Why are customers leaving?
-Which subscription plans have the highest churn?
-Which states have the highest churn?
-How much revenue is at risk?
-Which customers should the company retain first?
-🛠 Tools & Technologies
+🛠️ Tools & Technologies
 Python
 SQL (SQLite)
 Pandas
@@ -43,135 +27,111 @@ NumPy
 Matplotlib
 Seaborn
 Jupyter Notebook
-Data Cleaning
-Feature Engineering
-Exploratory Data Analysis (EDA)
 📂 Dataset
 
-The project combines three datasets:
+The project uses three related tables:
 
-Customer Information
-Subscription Details
-Customer Support Records
+Customer Data
+Subscription Data
+Customer Support Data
 
-These tables are joined using Customer ID for complete analysis.
+These tables were joined using SQL to perform complete customer analysis.
 
-📊 KPIs
-Customer Churn Rate
+⚙️ Project Workflow
+
+1️⃣ Data Collection
+Imported data from SQL database.
+Connected Python with SQLite.
+
+2️⃣ Data Cleaning
+Removed missing values.
+Fixed incorrect data types.
+Renamed columns.
+Removed duplicate records.
+Performed quality checks.
+
+3️⃣ Feature Engineering
+
+Created new business metrics like:
+
+Customer Tenure
+Churn Status
+Revenue Loss
 Retention Rate
-Revenue at Risk
-ARPU
-Average Customer Tenure
-Churn by Plan Type
-Churn by State
-Escalation Rate
-Average Complaints per Customer
-Churn vs Support Escalation Correlation
-🔄 Project Workflow
-Import Data
-      ↓
-Connect SQL Database
-      ↓
-Data Cleaning
-      ↓
-Feature Engineering
-      ↓
-Exploratory Data Analysis
-      ↓
-Data Visualization
-      ↓
-Business Insights
-      ↓
-Recommendations
-📈 Key Insights
-Overall Churn Rate: 28.6%
-Retention Rate: 71.4%
-Basic Plan customers had the highest churn.
-Karnataka recorded the highest churn.
-Monthly subscribers churned much more than annual subscribers.
-Revenue loss due to churn was approximately 18%.
-High customer support escalations were strongly linked with churn.
-💼 Business Recommendations
-Improve customer support for high-risk customers.
-Offer discounts to monthly subscribers.
-Investigate service issues in Karnataka.
-Focus on customers with High and Medium churn risk.
-Improve pricing strategy.
-Increase customer engagement before renewal.
-🚀 Skills Demonstrated
-SQL Queries
-Data Cleaning
-Data Wrangling
-Feature Engineering
-Exploratory Data Analysis
-Data Visualization
-Business Intelligence
-KPI Analysis
-Customer Analytics
-Business Storytelling
-⭐ Outcome
+Churn Score
 
-This project helped identify customer churn patterns, revenue risks, and actionable business strategies that can improve customer retention and increase business growth.
+4️⃣ Exploratory Data Analysis (EDA)
 
-4. Easy Explanation of the Project
+Performed:
 
-Imagine you own Netflix.
+Group By
+Aggregation
+Pivot Tables
+Filtering
+Business Analysis
 
-Some customers suddenly stop paying and cancel their subscription.
+5️⃣ Data Visualization
 
-You want answers like:
-
-Why did they leave?
-Which customers may leave next?
-Which plan loses the most customers?
-How much money is the company losing?
-
-This project finds those answers using data.
-
-Step 1 — Collect Data
-
-Three tables are used:
-
-Customer details
-Subscription details
-Support complaints
-Step 2 — Clean the Data
-Remove missing values
-Fix column names
-Correct data types
-Remove duplicate records
-Step 3 — Join Data
-
-Connect all tables using Customer ID.
-
-Step 4 — Analyze Data
-
-Calculate:
+Created charts for:
 
 Churn Rate
-Retention Rate
+Plan-wise Churn
+State-wise Churn
 Revenue Loss
-Customer Tenure
-ARPU
-Step 5 — Create Charts
-
-Visualize:
-
-Churn by Plan
-Churn by State
 Monthly vs Annual Churn
+Customer Segmentation
+
+6️⃣ Business Insights
+
+Converted technical analysis into business recommendations.
+
+📈 Key KPIs
+Churn Rate
+Retention Rate
+ARPU
 Revenue at Risk
-Step 6 — Find Insights
+Average Customer Tenure
+Escalation Rate
+Complaints per Customer
+Churn by Plan Type
+Churn by State
+Support vs Churn Correlation
 
-Example:
+📊 Project Output
+The analysis successfully identified:
 
-Basic plan customers leave the most.
-Monthly plans have higher churn.
-Karnataka has the highest churn.
-Step 7 — Give Business Recommendations
+Overall customer churn percentage.
+Revenue loss caused by churn.
+High-risk customers.
+Most affected subscription plans.
+States with maximum churn.
+Contract types with highest cancellation.
+Customer support issues affecting churn.
+Actionable business recommendations.
 
-Suggest actions such as:
+💡 Key Business Insights
+Overall Customer Churn Rate = 28.6%
+Retention Rate = 71.4%
+Basic subscription plan had the highest churn.
+Karnataka recorded the highest customer churn.
+September 2024 experienced the maximum churn.
+Monthly subscribers churned much more than yearly subscribers.
+Revenue loss due to churn was approximately 18%.
+Customers with support escalations showed higher churn risk.
+High churn-score customers should be prioritized for retention campaigns.
 
-Improve support quality.
-Offer renewal discounts.
-Contact high-risk customers before they cancel.
+📌 Business Recommendations
+Improve customer experience for Basic Plan users.
+Investigate churn reasons in Karnataka.
+Review pricing changes made during September.
+Improve customer support response time.
+Focus on customers with High Churn Score.
+Offer annual subscription discounts.
+Launch personalized retention campaigns.
+Monitor complaints before customer cancellation.
+
+✅ Project Conclusion
+
+This project demonstrates how data analytics can help businesses reduce customer churn through data-driven decision-making.
+
+Using SQL, Python, data cleaning, exploratory data analysis, feature engineering, and visualization, I identified important churn patterns, measured business impact, and generated actionable recommendations that can improve customer retention, increase revenue, and support strategic business decisions.
